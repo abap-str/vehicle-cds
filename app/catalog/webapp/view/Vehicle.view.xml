@@ -15,6 +15,23 @@
         upperCaseAnchorBar="false">
         <headerTitle>
             <ObjectPageDynamicHeaderTitle>
+                <expandedHeading>
+					<m:Title text="{merk/merk_name} {type_unit}" wrapping="true" class="sapUiSmallMarginEnd"/>
+				</expandedHeading>
+
+                <snappedHeading>
+					<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+						<m:FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+							<f:Avatar
+								src="{image_url}"
+								displaySize="S"
+								displayShape="Square"
+								class="sapUiTinyMarginEnd"/>
+							<m:Title text="{merk/merk_name} {type_unit}" wrapping="true"/>
+						</m:FlexBox>
+					</m:FlexBox>
+				</snappedHeading>
+                
                 <actions>
                     <m:ToggleButton
                         text="Edit"
@@ -52,8 +69,8 @@
                     <m:Text text="{merk/merk_name}"/>
                 </m:VBox>
                 <m:VBox justifyContent="Center" class="sapUiSmallMarginEnd">
-                    <m:Label text="Model"/>
-                    <m:Text text="{type_unit}"/>
+                    <m:Label text="Price Total"/>
+                    <m:Text text="to be developed"/>
                 </m:VBox>
             </m:FlexBox>
         </headerContent>

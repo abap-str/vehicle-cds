@@ -42,7 +42,7 @@
 						<ColumnListItem type="Navigation" press=".onListItemPress">
 							<cells>
 								<ObjectIdentifier title="{type_unit}"/>
-								<ObjectIdentifier title="{merk/merk_name}"/>
+								<ObjectIdentifier text="{merk/merk_name}"/>
 							</cells>
 						</ColumnListItem>
 					</items>
