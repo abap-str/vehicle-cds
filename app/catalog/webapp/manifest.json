@@ -45,6 +45,44 @@
 					"synchronizationMode": "None"
 				}
 			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.f.routing.Router",
+				"viewType": "XML",
+				"viewPath": "zmm.vehicle.catalog.view",
+				"controlId": "mainLayout",
+				"transition": "slide",
+				"bypassed": {
+
+				},
+				"async": true
+			},
+			"routes": [
+				{
+					"name": "home",
+					"pattern": "",
+					"target": "home"
+				},
+				{
+					"name": "vehicle",
+					"pattern": "vehicle/{vehicleId}/{layout}",
+					"target": [
+						"home",
+						"vehicle"
+					]
+				}
+			],
+			"targets": {
+				"home": {
+					"viewName": "Home",
+					"controlAggregation": "beginColumnPages"
+				},
+				"vehicle": {
+					"viewName": "Vehicle",
+					"controlAggregation": "midColumnPages"
+				}
+			}
 		}
 	}
 }

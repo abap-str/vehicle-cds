@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="zmm.vehicle.catalog.controller.Category"
+	controllerName="zmm.vehicle.catalog.controller.Home"
 	xmlns="sap.m"
 	xmlns:f="sap.f"
 	xmlns:mvc="sap.ui.core.mvc">
@@ -28,21 +28,21 @@
 					class="sapFDynamicPageAlignContent"
 					width="auto"
 					items="{
-						path: '/Categories'
+						path: '/Vehicles'
 					}">
 					<columns>
 						<Column width="12em">
-							<Text text="Category"/>
+							<Text text="Type"/>
 						</Column>
 						<Column	hAlign="End">
-							<Text text="ID"/>
+							<Text text="Merk"/>
 						</Column>
 					</columns>
 					<items>
 						<ColumnListItem type="Navigation" press=".onListItemPress">
 							<cells>
-								<ObjectIdentifier title="{category_name}"/>
-								<ObjectIdentifier title="{ID}"/>
+								<ObjectIdentifier title="{type_unit}"/>
+								<ObjectIdentifier title="{merk/merk_name}"/>
 							</cells>
 						</ColumnListItem>
 					</items>

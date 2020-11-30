@@ -1,17 +1,19 @@
 <mvc:View
+	controllerName="zmm.vehicle.catalog.controller.App"
 	displayBlock="true"
 	height="100%"
 	xmlns="sap.f"
 	xmlns:mvc="sap.ui.core.mvc">
 	<FlexibleColumnLayout
 		id="mainLayout"
-		stateChange="onStateChanged"
-		backgroundDesign="Solid">
-		<beginColumnPages>
+		stateChange=".onStateChange"
+		backgroundDesign="Solid"
+		layout="{appSettings>/layout}"/>
+		<!-- <beginColumnPages>
 			<mvc:XMLView id="beginView" viewName="zmm.vehicle.catalog.view.Category"/>
 		</beginColumnPages>
 		<midColumnPages>
 			<mvc:XMLView id="midColumnView" viewName="zmm.vehicle.catalog.view.Vehicle"/>
 		</midColumnPages>
-	</FlexibleColumnLayout>
+	</FlexibleColumnLayout> -->
 </mvc:View>
