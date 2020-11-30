@@ -3,3 +3,4 @@ ID,varian,category_ID,merk_ID,main_type,type_unit,s_fuel,s_eng_displ,s_drivetrai
 2,Sedan,1,5,,M3 GTR 2005,Gasoline,3000cc,Front Engine Rear Drive,AT,false,assets/images/2.jpeg
 3,Sedan,1,12,,XK8,Gasoline,3500cc,Front Engine Front Drive,AT,false,assets/images/3.jpeg
 4,Coupe,1,8,,F355 Spyder,Gasoline,3500cc,Mid Engine Rear Drive,AT,false,assets/images/4.jpeg
+5,Coupe,1,15,,Mini Cooper,Gasoline,1400cc,Front Engine Front Drive,AT,false,assets/images/5.jpeg    
