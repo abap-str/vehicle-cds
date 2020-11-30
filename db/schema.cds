@@ -19,10 +19,17 @@ entity BBN {
 entity Vehicles : managed {
     key ID : Integer;
     varian : String;
+    category: Association to Categories;
     merk : Association to Merk;
     main_type : String;
     type_unit : String;
+    s_fuel : String;
+    s_eng_displ : String;
+    s_drivetrain : String;
+    s_transmission : String;
     flag_delete : Boolean;
+    image_url : String;
+    pricelists: Association to many VehiclePricelist on pricelists.vehicle = $self;
 }
 
 entity Carosseries : managed {

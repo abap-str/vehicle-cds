@@ -1,4 +1,5 @@
-ID,varian,merk_ID,main_type,type_unit,flag_delete
-1,Sedan,2,,DB9 Coupe,false
-2,Sedan,5,,M3 GTR 2005,false
-3,Sedan,12,,XK8,false
+ID,varian,category_ID,merk_ID,main_type,type_unit,s_fuel,s_eng_displ,s_drivetrain,s_transmission,flag_delete,image_url
+1,Sedan,1,2,,DB9 Coupe,Gasoline,4000cc,Front Engine Rear Drive,AT,false,assets/images/1.jpeg
+2,Sedan,1,5,,M3 GTR 2005,Gasoline,3000cc,Front Engine Rear Drive,AT,false,assets/images/2.jpeg
+3,Sedan,1,12,,XK8,Gasoline,3500cc,Front Engine Front Drive,AT,false,assets/images/3.jpeg
+4,Coupe,1,8,,F355 Spyder,Gasoline,3500cc,Mid Engine Rear Drive,AT,false,assets/images/4.jpeg
