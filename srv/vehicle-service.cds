@@ -10,4 +10,6 @@ service VehicleService @(path:'/catalog') {
     entity Merk as projection on db.Merk;
 
     entity Vehicles as projection on db.Vehicles;
+
+    entity Carosseries as projection on db.Carosseries;
 }
