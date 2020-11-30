@@ -16,4 +16,6 @@ service VehicleService @(path:'/catalog') {
     entity Carosseries as projection on db.Carosseries;
 
     entity Pricelist as projection on db.VehiclePricelist;
+
+    entity Accessories as projection on db.Accessories;
 }
